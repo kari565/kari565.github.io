@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Kalkulator</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Calculator">
+        <meta name="author" content="Karolina Wicyńska">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="calculator">
+                <div class="row">
+                    <textarea disabled class="col-sm-12" id="display" rows="3">0</textarea>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button clear">C</button>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button clear-last-num">CE</button>
+                    <div class="col-12 col-sm-6 dropdown">
+                        <a class="btn btn-raised btn-info dropdown-toggle col-12 col-sm-12 calc-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Waluta
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button left-bracket">(</button>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button right-bracket">)</button>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button operator" value="^">^</button>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button root">x^(1/n)</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="1">1</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="2">2</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="3">3</button>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button operator" value="/">/</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="4">4</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="5">5</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="6">6</button>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button operator" value="*">*</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="7">7</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="8">8</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="9">9</button>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button operator" value="-">-</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value="0">0</button>
+                    <button type="button" class="btn btn-raised col-6 col-sm-3 calc-button number" value=",">,</button>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button result" value="=">=</button>
+                    <button type="button" class="btn btn-raised btn-info col-6 col-sm-3 calc-button operator" value="+">+</button>
+                </div>
+            </div> 
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>
