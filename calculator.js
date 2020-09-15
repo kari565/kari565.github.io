@@ -156,7 +156,7 @@ function closeBrackets() {
 }
 
 function getExchangeRates() { 
-    let url = "http://api.nbp.pl/api/exchangerates/tables/A";
+    let url = "https://api.nbp.pl/api/exchangerates/tables/A";
     fetch(url).then(function(response) {
     response.text().then(function(data) {
         exchangeRates = JSON.parse(data);
